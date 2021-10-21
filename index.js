@@ -1,4 +1,6 @@
 // ---
+const header = document.querySelector('.header')
+const headercontent = document.querySelector('.header__content')
 const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont')
 const smallMenu = document.querySelector('.header__sm-menu')
 const headerHamMenuBtn = document.querySelector('.header__main-ham-menu')
@@ -36,3 +38,15 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    headercontent.style.transform = "scale(0.7) translateY(-24px)";
+    header.style.height = '50px'
+  } else {
+    headercontent.style.transform = "";
+    header.style.height = "auto"
+  }
+}

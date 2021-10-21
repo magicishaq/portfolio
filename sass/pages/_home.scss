@@ -1,3 +1,11 @@
+#home-video{
+  position: absolute;
+  min-width: 100%;
+  min-height: 100vh;
+  right: 0;
+  bottom: 0;
+}
+
 .home-hero {
   color: #fff;
   background: linear-gradient(
@@ -9,7 +17,6 @@
   background-position: center;
 
   height: 100vh;
-
   min-height: 80rem;
   max-height: 120rem;
   position: relative;

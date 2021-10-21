@@ -183,6 +183,13 @@ textarea {
 .d-none {
   display: none; }
 
+#home-video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100vh;
+  right: 0;
+  bottom: 0; }
+
 .home-hero {
   color: #fff;
   background: linear-gradient(to right, rgba(128, 128, 128, 0.8), rgba(128, 128, 128, 0.8)), url(../../assets/svg/common-bg.svg);
@@ -499,12 +506,14 @@ textarea {
   z-index: 1000;
   background: #000;
   background: #fff;
-  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+  transition: 0.5s; }
   .header__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 5rem; }
+    padding: 1rem 5rem;
+    transition: 0.2s; }
     @media only screen and (max-width: 56.25em) {
       .header__content {
         padding: 0 2rem; } }
@@ -637,6 +646,12 @@ textarea {
     color: #eee;
     font-size: 1.5rem;
     line-height: 1.7; }
+  .main-footer__pdf:after {
+    width: 32px;
+    height: 32px;
+    background: url("http://wwwimages.adobe.com/content/dam/acom/en/legal/images/badges/Adobe_PDF_file_icon_32x32.png");
+    display: inline-block;
+    content: ' '; }
   .main-footer__social-cont {
     margin-top: 2rem; }
   .main-footer__icon {

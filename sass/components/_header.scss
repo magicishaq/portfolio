@@ -5,12 +5,14 @@
   background: #000;
   background: #fff;
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
-
+  transition: 0.5s;
+  
   &__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 5rem;
+    transition: 0.2s;
     @include respond(tab-port) {
       padding: 0 2rem;
     }
