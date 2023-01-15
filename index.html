@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ishaq Portfolio</title>
     <meta name="description" content="Ishaq Khan Developer" />
-    <link rel="shortcut icon" type="image/png" href="./assets/png/ishaq.png"/>
+    <link rel="shortcut icon" type="image/png" href="./assets/png/ishaq.png" />
     <link rel="stylesheet" href="css/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+      ScrollReveal({ duration: 1000 });
+    </script>
   </head>
   <body>
     <header class="header">
@@ -84,14 +88,12 @@
     </header>
     <section class="home-hero">
       <video autoplay muted loop id="home-video">
-        <source src="./assets/mp4/video2.mp4" type="video/mp4">
+        <source src="./assets/mp4/video2.mp4" type="video/mp4" />
       </video>
       <div class="home-hero__content">
-        <h1 class="heading-primary"> I'm Ishaq</h1>
+        <h1 class="heading-primary">I'm Ishaq</h1>
         <div class="home-hero__info">
-          <p class="text-primary">
-            Front-end developer
-          </p>
+          <p class="text-primary">Front-end developer</p>
         </div>
         <div class="home-hero__cta">
           <a href="./index.html#projects" class="btn btn--bg">Projects</a>
@@ -99,7 +101,10 @@
       </div>
       <div class="home-hero__socials">
         <div class="home-hero__social">
-          <a href="https://www.linkedin.com/in/ishaq-khan-47056582/" class="home-hero__social-icon-link">
+          <a
+            href="https://www.linkedin.com/in/ishaq-khan-47056582/"
+            class="home-hero__social-icon-link"
+          >
             <img
               src="./assets/png/linkedin-ico.png"
               alt="icon"
@@ -108,7 +113,10 @@
           </a>
         </div>
         <div class="home-hero__social">
-          <a href="https://github.com/magicishaq" class="home-hero__social-icon-link">
+          <a
+            href="https://github.com/magicishaq"
+            class="home-hero__social-icon-link"
+          >
             <img
               src="./assets/png/github-ico.png"
               alt="icon"
@@ -117,7 +125,10 @@
           </a>
         </div>
         <div class="home-hero__social">
-          <a href="https://twitter.com/MagicIshaq" class="home-hero__social-icon-link">
+          <a
+            href="https://twitter.com/MagicIshaq"
+            class="home-hero__social-icon-link"
+          >
             <img
               src="./assets/png/twitter-ico.png"
               alt="icon"
@@ -135,7 +146,10 @@
         <h2 class="heading heading-sec heading-sec__mb-med">
           <span class="heading-sec__main">About Me</span>
           <span class="heading-sec__sub">
-            Im a Front-End developer. My Specialisation is in JavaScript, React and Optimisation. Known for being precise and data driven and Professionally taught. Passionate about modernising websites, listening to customers and mobile first applications 
+            Im a Front-End developer. My Specialisation is in JavaScript, React
+            and Optimisation. Known for being precise and data driven and
+            Professionally taught. Passionate about modernising websites,
+            listening to customers and mobile first applications
           </span>
         </h2>
         <div class="about__content">
@@ -145,8 +159,8 @@
               <p class="about__content-details-para">
                 Hey! It's
                 <strong>Ishaq Khan</strong>
-                and I'm a <strong> Frontend Web Developer </strong> located in
-                the West Midlands. I've done
+                and I'm a <strong> Full Stack Developer </strong> Working for
+                the <strong>BBC</strong>. I've done
                 <strong> Developing for the travel industry </strong>
                 projects for agencies, consulted for startups, and collaborated
                 with talented people to create
@@ -154,11 +168,13 @@
                 for both business and consumer use.
               </p>
               <p class="about__content-details-para">
-               Im an avid programmer, Find out more
+                Im an avid programmer, Find out more
                 <strong>contact</strong> me here.
               </p>
             </div>
-            <a href="./index.html#projects" class="btn btn--med btn--theme dynamicBgClr"
+            <a
+              href="./index.html#projects"
+              class="btn btn--med btn--theme dynamicBgClr"
               >Contact</a
             >
           </div>
@@ -183,12 +199,36 @@
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-bg">
           <span class="heading-sec__main">Projects</span>
-          <span class="heading-sec__sub">
-            stuff I've worked on
-          </span>
+          <span class="heading-sec__sub"> stuff I've worked on </span>
         </h2>
 
         <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/bbc.png"
+                alt="bbc screen shot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">BBC Sport and News</h3>
+              <p class="projects__row-content-desc">
+                Using <strong>React</strong>, <strong>Typescript</strong>,
+                <strong>AWS</strong>, and
+                <strong>Industry accessibilty standards</strong> to build the
+                live stream serving millions of users during events such as the
+                mid terms and world cup.
+              </p>
+              <a
+                href="https://bbc.co.uk/"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Case Study</a
+              >
+            </div>
+          </div>
           <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
@@ -199,10 +239,14 @@
               />
             </div>
             <div class="projects__row-content">
-              <h3 class="projects__row-content-title">National Express Coaches</h3>
+              <h3 class="projects__row-content-title">
+                National Express Coaches
+              </h3>
               <p class="projects__row-content-desc">
-                Using <strong>A/B tests</strong> , I updated the <strong>journey planner</strong>  Not only this. But redesigned various pages like the contact page
-                and redesigned the booking engine 
+                Using <strong>A/B tests</strong> , I updated the
+                <strong>journey planner</strong> Not only this. But redesigned
+                various pages like the contact page and redesigned the booking
+                engine
               </p>
               <a
                 href="https://www.nationalexpress.com/en"
@@ -222,9 +266,12 @@
               />
             </div>
             <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Hitachi Vantara redesign</h3>
+              <h3 class="projects__row-content-title">
+                Hitachi Vantara redesign
+              </h3>
               <p class="projects__row-content-desc">
-                Using <strong>React</strong> and <strong>SASS</strong> created the site using modern hooks and the Context API.
+                Using <strong>React</strong> and <strong>SASS</strong> created
+                the site using modern hooks and the Context API.
               </p>
               <a
                 href="https://rackconfiguration.hitachivantara.com/"
@@ -247,32 +294,11 @@
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Huel Commerce</h3>
               <p class="projects__row-content-desc">
-                Using <strong>React</strong> Components, changed elements on the store to shorten page speeds
+                Using <strong>React</strong> Components, changed elements on the
+                store to shorten page speeds
               </p>
               <a
                 href="https://huel.com/"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/png/bbc.png"
-                alt="bbc screen shot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">BBC Sport and News</h3>
-              <p class="projects__row-content-desc">
-                Using <strong>React</strong>, <strong>Typescript</strong>, <strong>AWS</strong>, and <strong>Industry accessibilty standards</strong> to build the live stream serving millions of users during events such as the mid terms and world cup. 
-              </p>
-              <a
-                href="https://bbc.co.uk/"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
                 >Case Study</a
@@ -291,9 +317,13 @@
           </span>
         </h2>
         <div class="contact__form-container">
-          <form action="https://formsubmit.co/ishaqkhan1993@gmail.com" method="POST" class="contact__form">
+          <form
+            action="https://formsubmit.co/ishaqkhan1993@gmail.com"
+            method="POST"
+            class="contact__form"
+          >
             <div class="contact__form-field">
-              <input type="hidden" name="_next" value="./thankyou.html">
+              <input type="hidden" name="_next" value="./thankyou.html" />
               <label class="contact__form-label" for="name">Name</label>
               <input
                 required
@@ -342,35 +372,48 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ishaq-khan-47056582/">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/ishaq-khan-47056582/"
+              >
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="https://github.com/magicishaq">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/magicishaq"
+              >
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="https://twitter.com/magicishaq?lang=en">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/magicishaq?lang=en"
+              >
                 <img
                   class="main-footer__icon"
                   src="./assets/png/twitter-ico.png"
                   alt="icon"
                 />
               </a>
-          
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
             <h4 class="heading heading-sm text-lt">Ishaq Khan</h4>
             <p class="main-footer__short-desc">
-              Download 
-              <a class="main-footer__pdf" href="./assets/cv.pdf" download>Ishaq Khan CV</a>
+              Download
+              <a class="main-footer__pdf" href="./assets/cv.pdf" download
+                >Ishaq Khan CV</a
+              >
             </p>
           </div>
         </div>
@@ -378,13 +421,11 @@
         <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
         <div class="main-footer__lower">
           &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href=""
-            >Ishaq Khan</a
-          >
+          <a rel="noreferrer" target="_blank" href="">Ishaq Khan</a>
         </div>
       </div>
     </footer>
-
+    <script src="./scroll.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
